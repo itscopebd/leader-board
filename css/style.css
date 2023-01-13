@@ -338,6 +338,12 @@ flex-direction: column;
 /* small devices  */
 
 @media (max-width:575px){
+
+    main {
+
+        width: 70%;
+    }
+    
     .logo {
         display: none;
     }
