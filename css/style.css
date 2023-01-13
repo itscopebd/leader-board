@@ -355,6 +355,9 @@ flex-direction: column;
    
     grid-template-columns: repeat(1, 1fr);  
 }
+.player {
+    flex-direction: column;
+}
 .player img {
     width: 40%;
 }
