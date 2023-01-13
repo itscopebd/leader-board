@@ -338,6 +338,9 @@ flex-direction: column;
 /* small devices  */
 
 @media (max-width:575px){
+    .container {
+        padding: 30px 10px 0 10px;
+    }
 
     main {
 
@@ -351,6 +354,9 @@ flex-direction: column;
 .course_wrapper, .blogs__wrapper {
    
     grid-template-columns: repeat(1, 1fr);  
+}
+.player img {
+    width: 40%;
 }
 .single_blog {
 text-align: center;
