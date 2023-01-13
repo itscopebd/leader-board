@@ -49,13 +49,57 @@ main {
 .horizontal {
     border: 1px solid #D1D1D1;
 }
+li{
+    list-style: none;
+}
+
+/* header css  */
+
+header{
+    background-color: var(--primary-color);
+}
+header .header__content_wrap{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+
+   border-radius: 5px;
+}
+
+.logo span{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 36px;
+color: #FFFFFF;
+
+}
+.header__content_wrap ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.header__content_wrap ul li{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+header img{
+    width: 20px;
+}
 
 /* -----------------
 players styles 
 -------------------- */
-/* .players {
-    padding: 5px 15px;
-} */
+
 .players {
     padding-bottom: 20px;
 }
@@ -294,6 +338,9 @@ flex-direction: column;
 /* small devices  */
 
 @media (max-width:575px){
+    .logo {
+        display: none;
+    }
     .players__wrapper,
 .course_wrapper, .blogs__wrapper {
    
