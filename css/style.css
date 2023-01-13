@@ -20,7 +20,7 @@ body {
 
 main {
     background-color: #fff;
-    width: 870px;
+    width: 50%;
     margin: 0 auto;
     border-radius: 5px;
 
@@ -161,6 +161,15 @@ players styles
     line-height: 30px;
     color: #1E1E1E;
 }
+.instructor_name{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14.6913px;
+line-height: 17px;
+color: #ED6B4F;
+margin: 10px 0;
+}
 .course__info {
     display: flex;
     justify-content: space-between;
@@ -188,4 +197,131 @@ color: #A2A2A2;
     padding: 5px 10px;
     background: #FFE4E8;
     border-radius: 14.6913px;
+}
+
+
+/* responsive styles  */
+
+@media (max-width:1500px) and (min-width:992px){
+    .players__wrapper,
+.course_wrapper {
+   
+    grid-template-columns: repeat(2, 1fr);  
+}
+.single_blog {
+text-align: center;
+flex-direction: column;
+}
+.single_blog img{
+    width: 70%;
+}.single_course{
+    text-align: center;
+}
+.course__info{
+    flex-direction: column;
+}
+}
+
+/* tablet devices  */
+
+@media (max-width:991px) and (min-width:768px){
+    .players__wrapper,
+.course_wrapper {
+   
+    grid-template-columns: repeat(2, 1fr);  
+}
+.single_blog {
+text-align: center;
+flex-direction: column;
+}
+.single_blog img{
+    width: 70%;
+}
+.blog__title {
+    font-size: 16px;
+}
+.author__name {
+    font-size: 14px;
+}
+
+.single_course{
+    text-align: center;
+}
+.course__info{
+    flex-direction: column;
+}
+.course_name {
+    font-size: 18.0336px;
+    line-height: 27px;
+}
+}
+
+/* mobile devices  */
+
+@media (max-width:767px) and (min-width:576px){
+    .players__wrapper,
+.course_wrapper {
+   
+    grid-template-columns: repeat(1, 1fr);  
+}
+.single_blog {
+text-align: center;
+flex-direction: column;
+}
+.single_blog img{
+    width: 70%;
+}
+.blog__title {
+    font-size: 15px;
+    line-height: 23px;
+}
+.author__name {
+    font-size: 14px;
+}
+
+.single_course{
+    text-align: center;
+}
+.course__info{
+    flex-direction: column;
+}
+.course_name {
+    font-size: 18.0336px;
+    line-height: 27px;
+}
+}
+
+/* small devices  */
+
+@media (max-width:575px){
+    .players__wrapper,
+.course_wrapper, .blogs__wrapper {
+   
+    grid-template-columns: repeat(1, 1fr);  
+}
+.single_blog {
+text-align: center;
+flex-direction: column;
+}
+.single_blog img{
+    width: 70%;
+}
+.blog__title {
+    font-size: 15px;
+    line-height: 23px;
+}
+.author__name {
+    font-size: 14px;
+}
+
+.single_course{
+    text-align: center;
+}
+.course__info{
+    flex-direction: column;
+}
+.course_name {
+    font-size: 18.0336px;
+    line-height: 27px;
+}
 }
